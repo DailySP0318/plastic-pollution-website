@@ -1,0 +1,448 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #004d40;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-button {
+    background-color: #00bfa5;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #00796b;
+}
+
+/* Overview Section */
+#overview {
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.infographics {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.infographics img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Statistics Section */
+#statistics {
+    padding: 3rem 2rem;
+    background-color: #e1f5fe;
+    text-align: center;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.stat {
+    background-color: #0288d1;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.stat:hover {
+    transform: scale(1.05);
+}
+
+/* Interactive Map Section */
+#global-impact {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+#map-container {
+    position: relative;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+#map-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-overlay {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 69, 0, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.map-overlay:hover {
+    transform: scale(1.3);
+}
+
+#pacific {
+    top: 40%; left: 50%;
+}
+#atlantic {
+    top: 60%; left: 30%;
+}
+#indian {
+    top: 65%; left: 70%;
+}
+
+/* Call to Action Section */
+#call-to-action {
+    background-color: #004d40;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cta-btn {
+    background-color: #00bfa5;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #00796b;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Learn More Section with Enhanced Styling */
+#learn-more {
+    padding: 3rem 2rem;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+#learn-more h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #005f73;
+}
+
+.learn-more-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.learn-subsection {
+    background-color: #e1f5fe;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.learn-subsection:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon and Image Styling */
+.section-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Subsection Headers */
+.learn-subsection h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #028090;
+    display: flex;
+    align-items: center;
+}
+
+.learn-subsection p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* List Styling */
+.learn-subsection ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.learn-subsection ul li {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.learn-subsection ul li strong {
+    color: #028090;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Join a Cleanup Section */
+#join-cleanup {
+    padding: 3rem 2rem;
+    background-color: #f0fdfd;
+    text-align: center;
+}
+
+#join-cleanup h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #005f73;
+}
+
+#join-cleanup p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.cleanup-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cleanup-option {
+    background-color: #e1f5fe;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1 1 30%;
+    transition: transform 0.3s ease;
+}
+
+.cleanup-option:hover {
+    transform: translateY(-5px);
+}
+
+.option-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.cleanup-option h3 {
+    font-size: 1.5rem;
+    color: #028090;
+    display: flex;
+    align-items: center;
+}
+
+.cleanup-option p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Button for Cleanup Options */
+.cleanup-option .cta-btn {
+    background-color: #00bfa5;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cleanup-option .cta-btn:hover {
+    background-color: #00796b;
+}
+
+/* Reduce Plastic Use Section */
+#reduce-plastic {
+    padding: 3rem 2rem;
+    background-color: #f0fff4;
+    text-align: center;
+}
+
+#reduce-plastic h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #005f73;
+}
+
+#reduce-plastic p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.reduce-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reduce-option {
+    background-color: #e1ffe1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1 1 30%;
+    transition: transform 0.3s ease;
+}
+
+.reduce-option:hover {
+    transform: translateY(-5px);
+}
+
+.option-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.reduce-option h3 {
+    font-size: 1.5rem;
+    color: #028090;
+    display: flex;
+    align-items: center;
+}
+
+.reduce-option p, .reduce-option ul {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.reduce-option ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.checklist input[type=checkbox] {
+    margin-right: 10px;
+    accent-color: #028090;
+}
+
+/* Button for Alternatives */
+.reduce-option .cta-btn {
+    background-color: #00bfa5;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.reduce-option .cta-btn:hover {
+    background-color: #00796b;
+}
+
+
